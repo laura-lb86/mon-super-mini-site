@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Test</title>
+	
+
+	
+<link href="testflex.css" rel="stylesheet" type="text/css">
+	
+</head>
+
+<body>
+
+
+
+
+
+<div class="site">
+
+    <div class="header">  <!---------Bloc de haut---------->
+
+        <div class="Logo"> 
+            <h1>Travel</h1>
+        </div>
+    
+        <nav>
+            <ul class="menu">
+                <li><a>Item 1</a></li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+                <li>Item 5</li>
+                <li>Item 6</li>
+                <li>Item 7</li>
+            </ul>
+        </nav>
+    
+    </div>
+
+
+
+<div class="page"> <!---------Page---------->
+
+
+
+    <div class="colonne-gauche"> <!---------Colonne de gauche---------->
+
+        <!---------Test menu burger--------->
+
+
+<button class="burger-button" aria-label="Menu" data-expanded="false">
+    <svg class="burger-icon" aria-hidden="true" focusable="false" viewBox=" 0 0 100 100">
+        <rect class="rect-1"/>
+        <rect class="rect-2"/>
+        <rect class="rect-3"/>
+    
+    </svg>
+    </button>
+
+
+
+<!---------Test current color---------->
+
+<button class="favorite-button">
+    <svg aria-hidden="true" viewBox=" 0 0 24 24" focusable="false">
+        <path d="M12 2l3.09 6.26L22 9.27l-5
+        4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87
+        6.91-1.01L12 2z" fill="currentColor"></path> <!--Etoile-->
+
+    </svg>
+    <span>Ajouter aux favoris</span>
+
+</button>
+    
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam laboriosam odio porro eveniet dolores ipsa reiciendis, non quis! Sit error nostrum repellendus, quo assumenda unde ducimus animi ipsa deserunt officia?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam laboriosam odio porro eveniet dolores ipsa reiciendis, non quis! Sit error nostrum repellendus, quo assumenda unde ducimus animi ipsa deserunt officia?
+        </p>
+
+        <ul>
+
+                <li>Items 1</li>
+                <li>Items 2</li>
+                <li>Items 3</li>
+
+        </ul>
+
+    </div>
+
+
+    <div class="boite-droite">  <!---------Boîte de droite---------->
+
+            <div class="articles1et2 ">
+
+                <img src="images/montagne.jpg">
+                <h2>Heading 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda enim vitae sed, laboriosam optio, voluptatum excepturi deleniti cum perferendis repellat natus tempora recusandae, fugiat beatae sunt molestiae minima libero illo?</p>
+
+            </div>
+            
+            <div class="articles1et2 ">
+
+                <img src="images/montagne.jpg">
+                <h2>Heading 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda enim vitae sed, laboriosam optio, voluptatum excepturi deleniti cum perferendis repellat natus tempora recusandae, fugiat beatae sunt molestiae minima libero illo?</p>
+
+            </div>
+        
+
+
+            <div class="article345">
+
+                <img src="images/montagne.jpg">
+                <h2>Heading 3</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda enim vitae sed, laboriosam optio, voluptatum excepturi deleniti cum perferendis repellat natus tempora recusandae, fugiat beatae sunt molestiae minima libero illo?</p>
+
+            </div>
+            
+            <div class="article345">
+
+                <img src="images/montagne.jpg">
+                <h2>Heading 4</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda enim vitae sed, laboriosam optio, voluptatum excepturi deleniti cum perferendis repellat natus tempora recusandae, fugiat beatae sunt molestiae minima libero illo?</p>
+
+            </div>
+
+            <div class="article345">
+
+                <img src="images/montagne.jpg">
+                <h2>Heading 5</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda enim vitae sed, laboriosam optio, voluptatum excepturi deleniti cum perferendis repellat natus tempora recusandae, fugiat beatae sunt molestiae minima libero illo?</p>
+
+            </div>
+        
+        
+
+    </div>
+
+
+</div>
+
+</div>
+
+<script>
+    const burgerButton = document.querySelector('.burger-button');
+    
+    burgerButton.addEventListener('click', () => {
+      const expanded = burgerButton.getAttribute('data-expanded') === 'true';
+      burgerButton.setAttribute('data-expanded', !expanded);
+    });
+    
+    </script>
+    
+    
+
+</body>

@@ -1,0 +1,5 @@
+stylesheet
+@font-face {
+	font-family: 'nostra';
+	src: url('NostraTestStream.otf') format('opentype');
+}

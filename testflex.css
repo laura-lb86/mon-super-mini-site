@@ -1,0 +1,204 @@
+
+html {
+    box-sizing: border-box;
+    }
+    
+    *{
+        box-sizing: inherit;
+        
+    }
+
+/*--------------Test menu burger---------------*/
+
+.burger-icon {
+    display: inline-block;
+    width: 20px;height: 20px;
+}
+
+rect{
+    x: 0;
+    rx: 5px; /*coins arrondi*/
+    width: 100px;
+    height: 20px;
+    transition: 
+        y 0.3s 0.3s,
+        opacity 0.3s,
+        rotate 0.3s;
+    transform-origin: 50% 50%;
+
+}
+
+[data-expanded="true"] rect {
+    transition: 
+      y 0.3s,
+      opacity 0.3s,
+      rotate 0.3s 0.3s cubic-bezier(.55,-0.65,0,2.32);
+  }
+
+/* coordonnées y initiales */
+.rect-1 {
+    y: 0;
+  }
+
+.rect-2 {
+    y: 40px;
+  }
+
+.rect-3 {
+    y: 80px;
+  }
+
+
+
+[data-expanded="true"] .rect-1 {
+    y: 40px;
+    rotate: 45deg;
+
+  }
+
+[data-expanded="true"] .rect-2 {
+    opacity: 0;
+  }
+
+[data-expanded="true"] .rect-3 {
+    y: 40px;
+    rotate: -45deg;
+
+  }
+
+/*--------------Test current color---------------*/
+
+
+.favorite-button {
+    display: flex; align-items: center;
+    gap: .5em;
+    padding: 1em;
+    background: #000000; color: #fff;
+    border: none; cursor: pointer;
+    border-radius: 8px;
+}
+
+.favorite-button svg {
+    width: 1em; height: 1em;
+
+    }
+
+.favorite-button:hover {
+    background-color: #ffdd40;
+    transition: background-color 0.3s ease;
+    color: #893131;
+}
+
+/*------------Header---------------*/
+
+
+.header {
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    gap: 20px;
+    align-items: center;
+}
+
+.Logo {
+    background-color: rgb(0, 0, 0);
+    flex: 0 1 20%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 30px;
+    color: white;
+    font-family:"NostraTest-Stream";
+
+}
+
+h1:hover {
+    background-color: #ffffff;
+    transition: background-color 0.3s ease;
+    color: #000000;
+}
+
+
+
+nav {
+    
+    flex-basis: 80%;
+    flex-grow: 1;
+}
+
+.menu {
+    display: flex;
+    border: solid 1px rgb(255, 255, 255);
+    padding:0;
+}
+
+
+.menu > li {
+    background-color: rgb(0, 0, 0);
+    flex: 1;
+    display: inline-block;
+    justify-content: space-between;
+    padding: 10px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    transition: background-color 0.3s ease;
+}
+
+nav > ul > li:hover {
+    background-color: #ffffff;
+    transition: background-color 0.3s ease;
+    color: #000000;
+}
+
+
+/*---------------page-------------*/
+
+
+.page{
+    display: flex;
+    gap: 20px;
+}
+
+h2 {
+    font-family:"NostraTest-Stream";
+}
+
+img {
+    width: 100%;
+}
+
+
+.colonne-gauche {
+    background-color: rgb(252, 242, 227);
+    flex: 0 1 20%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2%;
+}
+
+
+.boite-droite {
+    margin-top: 20px;
+    gap: 20px;
+    display: flex;
+    flex-basis: 80%;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: space-between;
+
+}
+
+
+.articles1et2 {
+    background-color: rgb(252, 242, 227);
+    flex: 1 1 48%;
+    padding: 2%;
+
+}
+
+.article345 {
+    background-color: rgb(252, 242, 227);
+    flex: 1 1 30%;
+    padding: 2%;
+}
