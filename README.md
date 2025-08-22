@@ -1,2 +1,2 @@
-# mon-super-mini-site
+# mon-super-mini-site sur git
 Premier projet avec Git
